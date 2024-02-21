@@ -1,0 +1,24 @@
+.header{
+    background-color: var(--color_2);
+    height: 50px;
+}
+.container{
+    max-width: none;
+}
+.content{
+    background-color: var(--color_1);
+    min-height: calc(100% - 50px);
+}
+.footer{
+    background-color: var(--color_4);
+    min-height: 200px;
+}
+.photo{
+    transform: rotateY(180deg);
+}
+.afirmaciones{
+    border-radius: 15px;
+    color: white;
+    background-color: var(--color_4);
+    box-shadow: 0px 0px 5px -8px rgba(0,0,0,0.75);
+}
