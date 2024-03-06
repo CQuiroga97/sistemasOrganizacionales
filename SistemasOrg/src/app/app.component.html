@@ -1,7 +1,8 @@
+<div class="menuButton" (click)="open=!open">
+    <nb-icon [icon]="!open?'menu-outline':'menu-arrow-outline'" ></nb-icon>
+</div>
 <div class="container w-100 h-100">
-    <div class="menuButton" (click)="open=!open">
-        <nb-icon [icon]="!open?'menu-outline':'menu-arrow-outline'" ></nb-icon>
-    </div>
+    
     <div [className]="open?'row justify-content-center menu open':'row justify-content-center menu'">
         <div class="col-12 header justify-content-center">
             <div class="container h-100">

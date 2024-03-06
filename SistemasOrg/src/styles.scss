@@ -72,6 +72,7 @@ app-nosotros, app-estrategias, app-organizacion{
     width: 100%;
   }
   .menuButton{
+    position: fixed;
     display: block;
     z-index: 5;
     top: 10px;
