@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SistemasOrg';
+  public pagina = 0;
+  public open = false;
+  constructor(private router:Router){}
+
+  cambiarPagina(paginaGo:any){
+    this.open = false;
+    this.router.navigate([paginaGo])
+  }
 }

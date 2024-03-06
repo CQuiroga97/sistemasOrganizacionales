@@ -4,10 +4,10 @@
 @import 'bootstrap/scss/bootstrap';
 
 :root {
-    --color_1:#BCCBE0;
+    --color_1:#ffffff;
     --color_2:#7285A1;
     --color_3:#193661;
-    --color_4:#362A10;
+    --color_4:#0b0929;
   }
 html{
   height: 100%;
@@ -22,4 +22,92 @@ body{
   border: 10px solid var(--color_2);
   position: relative;
   width: 100%;
+}
+.container.superior{
+  max-width: none;
+  background-color: var(--color_4);
+  color: white;
+}
+app-nosotros, app-estrategias, app-organizacion{
+  padding: 0px !important;
+}
+.cuadrados .col-3{
+  background-color: var(--color_4);
+  color: white;
+  min-height: 350px;
+  box-shadow: 0px 0px 33px -10px rgba(0,0,0,0.75);
+}
+.politicas .col-12{
+  // background-color: var(--color_4);
+  // color: white;
+}
+.objetivos .col-4{
+  background-color: #0b0929;
+  color: white;
+}
+.menuButton{
+  display: none;
+}
+@media (max-width: 1050px) {
+  .menu{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color_4);
+    display: flex;
+    right: 110%;
+    margin: 0px !important;
+    transition: all .5s;
+  }
+  .menu.open{
+    right: 0%;
+  }
+  .menu .col-12{
+    margin: auto;
+  }
+  .menu .row{
+    flex-direction: row;
+  }
+  .menu .row .col-auto{
+    width: 100%;
+  }
+  .menuButton{
+    display: block;
+    z-index: 5;
+    top: 10px;
+    left: 10px;
+    background-color: #193661;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 70px;
+    color: white;
+    padding: 10px;
+  }
+  .superior{
+    padding-top: 80px;
+  }
+  .superior .row{
+    flex-direction: column;
+  }
+  .superior .row .col-3, .superior .row .col-7, .superior .row .col-5, .superior .row .col-4{
+    width: 100%;
+  }
+  .superior .row img{
+    margin: auto;
+  }
+  .cuadrados .col-3 {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 300px;
+  }
+  .imgPoliticas .col-5, .imgPoliticas .col-2{
+    width: 90%;
+  }
+  .politicas .ps-5{
+    padding: 0px !important;
+  }
+  .politicas .col-10{
+    width: 100%;
+  }
 }

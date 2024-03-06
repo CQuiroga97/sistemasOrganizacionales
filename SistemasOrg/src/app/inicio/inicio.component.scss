@@ -1,6 +1,6 @@
 .header{
     background-color: var(--color_2);
-    height: 50px;
+    height: 60px;
 }
 .container{
     max-width: none;
@@ -21,4 +21,8 @@
     color: white;
     background-color: var(--color_4);
     box-shadow: 0px 0px 5px -8px rgba(0,0,0,0.75);
+}
+.menuBtn{
+    color: white;
+    cursor: pointer;
 }

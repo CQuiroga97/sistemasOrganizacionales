@@ -1,3 +1,51 @@
+<div class="container w-100 h-100">
+    <div class="menuButton" (click)="open=!open">
+        <nb-icon [icon]="!open?'menu-outline':'menu-arrow-outline'" ></nb-icon>
+    </div>
+    <div [className]="open?'row justify-content-center menu open':'row justify-content-center menu'">
+        <div class="col-12 header justify-content-center">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                        <span class="fs-5 menuBtn" *ngIf="pagina != 0">Inicio</span>
+                        <b class="fs-4 menuBtn" *ngIf="pagina == 0">Inicio</b>
+                    </div>
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2" (click)="cambiarPagina('organizacion')">
+                        <span class="fs-5 menuBtn" *ngIf="pagina != 2">Organización</span>
+                        <b class="fs-4 menuBtn" *ngIf="pagina == 2">Organización</b>
+                    </div>
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2" (click)="cambiarPagina('estrategias')">
+                        <span class="fs-5 menuBtn" *ngIf="pagina != 1">Estrategias</span>
+                        <b class="fs-4 menuBtn" *ngIf="pagina == 1">Estrategias</b>
+                    </div>
+                    
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2" (click)="cambiarPagina('nosotros')">
+                        <span class="fs-5 menuBtn" *ngIf="pagina != 3">Nosotros</span>
+                        <b class="fs-4 menuBtn" *ngIf="pagina == 3">Nosotros</b>
+                    </div>
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                        <span class="fs-5 menuBtn" *ngIf="pagina != 4">Contacto</span>
+                        <b class="fs-4 menuBtn" *ngIf="pagina == 4">Contacto</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row content">
+<router-outlet style="display: none;">
+    
+</router-outlet>
 
+</div>
+<div class="row footer justify-content-center">
+    <div class="col-8 mt-4">
+        Avendaño Molina Karen Tatiana <br>
+        Obando Gutiérrez Cristian Eduardo <br>
+        Reyes Moreno Maria Fernanda <br>
+        Rodriguez Quiroga Cristhian David
+        <hr>
+        2024
+    </div>
+</div>
+</div>
 
-<router-outlet></router-outlet>
