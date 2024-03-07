@@ -10,6 +10,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { EstrategiasComponent } from './estrategias/estrategias.component';
 import { OrganizacionComponent } from './organizacion/organizacion.component';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { DiagnosticoComponent } from './diagnostico/diagnostico.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     InicioComponent,
     NosotrosComponent,
     EstrategiasComponent,
-    OrganizacionComponent
+    OrganizacionComponent,
+    DiagnosticoComponent
   ],
   imports: [
     BrowserModule,
