@@ -1,0 +1,119 @@
+<div class="container superior w-100" id="diagrama">
+    <div class="row  justify-content-center">
+        <div class="col-10">
+            <b class="fs-1">
+                Mapa de macroprocesos
+            </b>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <img src="../../assets/img/macroprocesos.png" alt="" class="w-100">
+        </div>
+    </div>
+</div>
+<div class="container w-auto m-5">
+    <div class="row  justify-content-center">
+        <div class="col-10">
+            <b class="fs-1">
+                Tabla de macroprocesos
+            </b>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-3 d-flex border1  border-5">
+                        <b class="m-auto fs-3">
+                            Macroprocesos
+                        </b>
+                    </div>
+                    <div class="col ">
+                        <div class="row  border-3">
+                            <div class="col-4 d-flex border1  border-5">
+                                <b class="m-auto fs-3">
+
+                                    Procesos
+                                </b>
+                            </div>
+                            <div class="col">
+
+                                <div class="row  border-2">
+                                    <div class="col-4 d-flex border1  border-5">
+                                        <b class="m-auto fs-3">
+
+                                            Subprocesos
+                                        </b>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col p-3 border1  border-5 border-1 d-flex">
+                                                <b class="fs-3 m-auto">
+
+                                                    Procedimientos
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="tabla">
+        <div class="col-12">
+            <div class="container">
+                <div class="row border1 border-5" *ngFor="let macro of tabla; let i = index"
+                    [ngClass]="i%2 == 1?'color_1_1':'color_1_2'">
+                    <div class="col-3 d-flex ">
+                        <b class="m-auto fs-3">
+
+                            {{macro.titulo_macro}}
+                        </b>
+                    </div>
+                    <div class="col ">
+                        <div class="row border1 border-3" *ngFor="let proceso of macro.procesos; let i2 = index"
+                            [ngClass]="{'borderTop0':i2==0, 'color_2_1':(i2 + i)%2 == 1, 'color_2_2':(i2 + i)%2 == 0, 'borderBottom0':i2==macro.procesos.length - 1}">
+                            <div class="col-4 d-flex ">
+                                <b class="m-auto fs-4">
+
+                                    {{proceso.titulo_proceso}}
+                                </b>
+                            </div>
+                            <div class="col">
+
+                                <div class="row border1 border-2"
+                                    *ngFor="let subproceso of proceso.subprocesos; let i3 = index"
+                                    [ngClass]="{'borderTop0':i3==0, 'color_3_1':(i3 + i2)%2 == 1, 'color_3_2':(i3 + i2 + i)%2 == 0, 'borderBottom0':i3==proceso.subprocesos.length - 1}">
+                                    <div class="col-4 d-flex">
+                                        <span class="m-auto fs-5">
+
+                                            {{subproceso.titulo_subproceso}}
+                                        </span>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row"
+                                            *ngFor="let procedimientos of subproceso.procedimientos; let i4 = index"
+                                            [ngClass]="(i4 + i3)%2 == 1?'color_4_1':'color_4_2'">
+                                            <div class="col p-3  border-1">
+                                                {{procedimientos}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

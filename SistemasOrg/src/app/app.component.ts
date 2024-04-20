@@ -12,8 +12,8 @@ export class AppComponent {
   public open = false;
   constructor(private router:Router){}
 
-  cambiarPagina(paginaGo:any){
+  cambiarPagina(paginaGo:any, frag:any){
     this.open = false;
-    this.router.navigate([paginaGo])
+    this.router.navigate([paginaGo], {fragment:frag})
   }
 }
