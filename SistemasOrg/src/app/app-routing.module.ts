@@ -9,6 +9,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { MacroprocesosComponent } from './macroprocesos/macroprocesos.component';
 import { Capitulo6Component } from './capitulo6/capitulo6.component';
 import { BscComponent } from './bsc/bsc.component';
+import { ProcesosComponent } from './procesos/procesos.component';
 
 const routes: Routes = [
   {path:"", component:InicioComponent, title:"Inicio"},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:"macroprocesos", component:MacroprocesosComponent, title:"Macroprocesos"},
   {path:"aspectosLegales", component:Capitulo6Component, title:"Aspectos legales"},
   {path:"bsc", component:BscComponent, title:"Balanced Scorecard"},
+  {path:"procesos", component:ProcesosComponent, title:"Nuestros Procesos de Dirección"},
 ];
 
 @NgModule({

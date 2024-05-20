@@ -67,6 +67,19 @@
                     <div class="col-auto pt-1 ps-4 pe-4 m-2">
                         <div ngbDropdown class="d-inline-block">
                             <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                Procesos
+                            </button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem (click)="cambiarPagina('procesos', '')">
+                                    <span class="fs-6 menuBtn" *ngIf="pagina != 8">Procesos</span>
+                                    <b class="fs-5 menuBtn" *ngIf="pagina == 8">Procesos</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                        <div ngbDropdown class="d-inline-block">
+                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
                                 BSC
                             </button>
                             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
