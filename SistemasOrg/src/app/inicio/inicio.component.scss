@@ -26,3 +26,40 @@
     color: white;
     cursor: pointer;
 }
+.banner {
+    background: url('../../assets/img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .section img {
+    max-width: 100%;
+    height: auto;
+  }
+  .buttons {
+    margin-top: 1.5rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  img{
+    width: 400px;
+  }

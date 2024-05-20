@@ -7,6 +7,8 @@ import { OrganizacionComponent } from './organizacion/organizacion.component';
 import { DiagnosticoComponent } from './diagnostico/diagnostico.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { MacroprocesosComponent } from './macroprocesos/macroprocesos.component';
+import { Capitulo6Component } from './capitulo6/capitulo6.component';
+import { BscComponent } from './bsc/bsc.component';
 
 const routes: Routes = [
   {path:"", component:InicioComponent, title:"Inicio"},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path:"diagnostico", component:DiagnosticoComponent, title:"Diagnostico"},
   {path:"equipo", component:EquipoComponent, title:"Nuestro equipo"},
   {path:"macroprocesos", component:MacroprocesosComponent, title:"Macroprocesos"},
+  {path:"aspectosLegales", component:Capitulo6Component, title:"Aspectos legales"},
+  {path:"bsc", component:BscComponent, title:"Balanced Scorecard"},
 ];
 
 @NgModule({

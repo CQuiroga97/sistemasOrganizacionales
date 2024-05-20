@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.rojo{
+    color: #da2b2b;
+}
+.amarillo{
+    color: #dbcd37;
+}
+.verde{
+    color: #55b312;
+}
+.tabla-azul th, .tabla-azul td { background-color: #e3f2fd; }
+        .tabla-verde th, .tabla-verde td { background-color: #e8f5e9; }
+        .tabla-amarillo th, .tabla-amarillo td { background-color: #fffde7; }
+        .tabla-rojo th, .tabla-rojo td { background-color: #ffebee; }
+img{
+    width: 500px;
+    margin: auto;
+}

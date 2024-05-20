@@ -14,6 +14,8 @@ import { DiagnosticoComponent } from './diagnostico/diagnostico.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { RouterModule } from '@angular/router';
 import { MacroprocesosComponent } from './macroprocesos/macroprocesos.component';
+import { Capitulo6Component } from './capitulo6/capitulo6.component';
+import { BscComponent } from './bsc/bsc.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MacroprocesosComponent } from './macroprocesos/macroprocesos.component'
     OrganizacionComponent,
     DiagnosticoComponent,
     EquipoComponent,
-    MacroprocesosComponent
+    MacroprocesosComponent,
+    Capitulo6Component,
+    BscComponent
   ],
   imports: [
     RouterModule, // RouterModule.forRoot(routes, { useHash: true }), if this is your app.module
