@@ -1,0 +1,12 @@
+.table{
+    background-color: transparent !important;
+}
+.fortalezas { background-color: #91a4aa1e; /* azul claro */ }
+.debilidades { background-color: #ffcccb4b; /* rojo claro */ }
+.oportunidades { background-color: #90ee9052; /* verde claro */ }
+.amenazas { background-color: #f0e68c46; /* amarillo claro */ }
+
+.fo { background: linear-gradient(135deg, #91a4aa1e 50%, #90ee9052 50%); }
+.do { background: linear-gradient(135deg, #ffcccb4b 50%, #90ee9052 50%); }
+.fa { background: linear-gradient(135deg, #91a4aa1e 50%, #f0e68c46 50%); }
+.da { background: linear-gradient(135deg, #ffcccb4b 50%, #f0e68c46 50%); }

@@ -8,101 +8,106 @@
         <div class="col-12 header justify-content-center">
             <div class="container h-100">
                 <div class="row justify-content-center h-100">
+                    <div class="col-2 d-flex">
+                        <img src="../assets/img/Logo.png" alt="" class="w-25 m-auto">
+                    </div>
+                    <div class="col-10 row">
+                        <div class="col-auto pt-2 ps-4 pe-4 m-2"(click)="cambiarPagina('', '')">
+                            <span class="fs-5 menuBtn" *ngIf="pagina != 5">Inicio</span>
+                            <b class="fs-4 menuBtn" *ngIf="pagina == 5">Inicio</b>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    DomotekCo
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('diagnostico', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 0">Diagnóstico</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 0">Diagnóstico</b>
+                                    </button>
+                                    <button ngbDropdownItem (click)="cambiarPagina('organizacion', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 2">Organización</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 2">Organización</b>
+                                    </button>
+                                    <button ngbDropdownItem (click)="cambiarPagina('estrategias', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 1">Estrategias</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 1">Estrategias</b>
+                                    </button>
+                                    <button ngbDropdownItem (click)="cambiarPagina('nosotros', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 3">Nosotros</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 3">Nosotros</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    ¿Quienes somos?
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('equipo', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 4">Nuestro equipo</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 4">Nuestro equipo</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    Organización
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('macroprocesos', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 6">Macroprocesos</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 6">Macroprocesos</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    Procesos
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('procesos', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 8">Procesos</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 8">Procesos</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    BSC
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('bsc', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 8">BSC</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 8">BSC</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto pt-1 ps-4 pe-4 m-2">
+                            <div ngbDropdown class="d-inline-block">
+                                <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                    Legal
+                                </button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem (click)="cambiarPagina('aspectosLegales', '')">
+                                        <span class="fs-6 menuBtn" *ngIf="pagina != 7">Aspectos legales</span>
+                                        <b class="fs-5 menuBtn" *ngIf="pagina == 7">Aspectos Legales</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="col-auto pt-2 ps-4 pe-4 m-2"(click)="cambiarPagina('', '')">
-                        <span class="fs-5 menuBtn" *ngIf="pagina != 5">Inicio</span>
-                        <b class="fs-4 menuBtn" *ngIf="pagina == 5">Inicio</b>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                DomotekCo
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('diagnostico', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 0">Diagnóstico</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 0">Diagnóstico</b>
-                                </button>
-                                <button ngbDropdownItem (click)="cambiarPagina('organizacion', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 2">Organización</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 2">Organización</b>
-                                </button>
-                                <button ngbDropdownItem (click)="cambiarPagina('estrategias', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 1">Estrategias</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 1">Estrategias</b>
-                                </button>
-                                <button ngbDropdownItem (click)="cambiarPagina('nosotros', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 3">Nosotros</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 3">Nosotros</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                ¿Quienes somos?
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('equipo', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 4">Nuestro equipo</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 4">Nuestro equipo</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                Organización
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('macroprocesos', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 6">Macroprocesos</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 6">Macroprocesos</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                Procesos
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('procesos', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 8">Procesos</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 8">Procesos</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                BSC
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('bsc', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 8">BSC</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 8">BSC</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto pt-1 ps-4 pe-4 m-2">
-                        <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                Legal
-                            </button>
-                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                <button ngbDropdownItem (click)="cambiarPagina('aspectosLegales', '')">
-                                    <span class="fs-6 menuBtn" *ngIf="pagina != 7">Aspectos legales</span>
-                                    <b class="fs-5 menuBtn" *ngIf="pagina == 7">Aspectos Legales</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

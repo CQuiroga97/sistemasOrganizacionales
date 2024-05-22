@@ -1,60 +1,98 @@
 
   <div class="banner">
-    <h1>Bienvenido a DomotekCo</h1>
+    <h1 class="mt-5">Bienvenidos a DomoTekCo</h1>
   </div>
 
   <div class="section">
-    <h2>Nuestros Servicios</h2>
+    <h2>DomoTekCo</h2>
     <p>En DomotekCo, ofrecemos soluciones innovadoras en domótica para hacer tu hogar más inteligente y eficiente.</p>
     <!-- <img src="../../assets/img/inicio/img2.jpg" alt="Servicios de DomotekCo"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('diagnostico', '')">Diagnóstico</button>
-      <button class="btn" (click)="cambiarPagina('organizacion', '')">Organización</button>
-      <button class="btn" (click)="cambiarPagina('estrategias', '')">Estrategias</button>
-      <button class="btn" (click)="cambiarPagina('nosotros', '')">Nosotros</button>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>¿Quiénes Somos?</h2>
-    <p>DomotekCo está compuesto por un equipo de expertos en tecnología y diseño, dedicados a crear espacios inteligentes y funcionales.</p>
-    <!-- <img src="img_3.jpg" alt="Equipo de DomotekCo"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('equipo', '')">Nuestro Equipo</button>
+    <div class="container w-50">
+      <div class="row justify-content-center">
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('diagnostico', '')">
+          <span class="m-auto">
+            Diagnostico
+          </span>
+          <img src="../../assets/img/inicio/img3.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+        <div class="btnInicio col-auto p-0 d-flex flex-column  m-auto"(click)="cambiarPagina('organizacion', '')">
+          <span class="m-auto">
+            Organización
+          </span>
+          <img src="../../assets/img/inicio/img4.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+        <div class="btnInicio col-auto p-0 d-flex flex-column  m-auto"(click)="cambiarPagina('estrategias', '')">
+          <span class="m-auto">
+            Estrategias
+          </span>
+          <img src="../../assets/img/inicio/img5.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+        <div class="btnInicio col-auto p-0 d-flex flex-column  m-auto"(click)="cambiarPagina('nosotros', '')">
+          <span class="m-auto">
+            Nosotros
+          </span>
+          <img src="../../assets/img/inicio/img6.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="section">
     <h2>Organización</h2>
-    <p>Conoce más sobre nuestra estructura organizativa y los procesos que utilizamos para asegurar la calidad y eficiencia en nuestros proyectos.</p>
-    <!-- <img src="img_4.jpg" alt="Organización de DomotekCo"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('macroprocesos', '')">Macroprocesos</button>
+    <p>DomotekCo está compuesto por un equipo de expertos en tecnología y diseño, dedicados a crear espacios inteligentes y funcionales.</p>
+    <!-- <img src="img_3.jpg" alt="Equipo de DomotekCo"> -->
+    <div class="container w-25">
+      <div class="row justify-content-center">
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('equipo', '')">
+          <span class="m-auto">
+            Nuestro equipo
+          </span>
+          <img src="../../assets/img/inicio/img7.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('macroprocesos', '')">
+          <span class="m-auto">
+            Macroprocesos
+          </span>
+          <img src="../../assets/img/inicio/img8.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
     </div>
   </div>
-
+  </div>
   <div class="section">
     <h2>Procesos</h2>
     <p>Nuestros procesos nos permiten seleccionar el mejor personal.</p>
-    <!-- <img src="img_4.jpg" alt="Organización de DomotekCo"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('procesos', '')">Macroprocesos</button>
+    <!-- <img src="img_3.jpg" alt="Equipo de DomotekCo"> -->
+    <div class="container w-25">
+      <div class="row justify-content-center">
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('procesos', '')">
+          <span class="m-auto">
+            Procesos de selección
+          </span>
+          <img src="../../assets/img/inicio/img9.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('bsc', '')">
+          <span class="m-auto">
+            Balanced Scorecard
+          </span>
+          <img src="../../assets/img/inicio/img10.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
     </div>
+  </div>
   </div>
 
-  <div class="section">
-    <h2>Balanced Scorecard</h2>
-    <p>Nuestros indicadores permiten una garantia en nuestros productos.</p>
-    <!-- <img src="img_5.jpg" alt="Aspectos Legales"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('bsc', '')">Balanced Scorecard</button>
-    </div>
-  </div>
+
   <div class="section">
     <h2>Aspectos Legales</h2>
     <p>Nos comprometemos a cumplir con todas las normativas legales para garantizar la seguridad y confianza de nuestros clientes.</p>
     <!-- <img src="img_5.jpg" alt="Aspectos Legales"> -->
-    <div class="buttons">
-      <button class="btn" (click)="cambiarPagina('aspectosLegales', '')">Aspectos Legales</button>
+    <div class="container w-25">
+      <div class="row justify-content-center">
+        <div class="btnInicio col-auto p-0 d-flex flex-column m-auto"(click)="cambiarPagina('aspectosLegales', '')">
+          <span class="m-auto">
+            Aspectos legales
+          </span>
+          <img src="../../assets/img/inicio/img11.png" alt="" class="w-100 mt-auto mb-0">
+        </div>
     </div>
+  </div>
   </div>
